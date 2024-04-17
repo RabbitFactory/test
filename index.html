@@ -3,8 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive One-Image Site</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .image {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100%;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+        }
+
+
+
+        /* Rabbits Custom CSS */
+
         @keyframes enlarge-shrink {
         0% {
             transform: scale(1);
@@ -15,40 +52,51 @@
         100% {
             transform: scale(1);
         }
-    }
+        }
 
-    .primary_button {
+        .primary_button {
         padding: 10px 20px;
         font-size: 5rem;
-        background-color: #115f55;
-        color: white;
+        background-color: rgb(229, 255, 0);
+        color: black;
         border: none;
         border-radius: 1rem;
         cursor: pointer;
         animation: enlarge-shrink 1s ease-in-out infinite;
-    }
-    .button_box {
+        }
+    
+        .button_box {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        background: url(https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    @media screen and (max-width: 600px) {
-        .primary_button {
-            font-size: 1rem;
+        height: 16rem;
+        background: rgb(41, 41, 41);
         }
-    }
+
+        a{
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 600px) {
+        .primary_button {
+            font-size: 2rem;
+        }
+        }
     </style>
 </head>
 <body>
-    
-    <div class="button_box">
-
-        <button class="primary_button">Click Here</button>
+    <div class="container">
+        <a href="https://www.letsbett.com"><img class="image" src="ss1.jpg" alt="Responsive Image"></a>
+        <div class="content">
+        </div>
     </div>
+    <div>
+        <a href="https://www.letsbett.com">
+            <div class="button_box">
 
+                <button class="primary_button">Click Here !</button>
+            </div>
+        </a>
+    </div>
 </body>
 </html>
