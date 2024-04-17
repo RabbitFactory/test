@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes enlarge-shrink {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .primary_button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #115f55;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        animation: enlarge-shrink 1s ease-in-out infinite;
+    }
+    .button_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url(https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="button_box">
+
+        <button class="primary_button">Click Here</button>
+    </div>
+
+</body>
+</html>
