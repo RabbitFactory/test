@@ -19,11 +19,11 @@
 
     .primary_button {
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 5rem;
         background-color: #115f55;
         color: white;
         border: none;
-        border-radius: 5px;
+        border-radius: 1rem;
         cursor: pointer;
         animation: enlarge-shrink 1s ease-in-out infinite;
     }
@@ -35,6 +35,11 @@
         background: url(https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    @media screen and (max-width: 600px) {
+        .primary_button {
+            font-size: 1rem;
+        }
     }
     </style>
 </head>
