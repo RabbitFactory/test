@@ -28,27 +28,23 @@
     transform: translateY(10px);
   }
 }
-
         video {
             height: 650px; /* Set fixed height */
             width: auto;  /* Maintain aspect ratio */
         }
         .bg-img {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/shahi_bg.png');
+          background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/shahi_bg.png');
           background-size: cover; /* Covers the whole area */
           background-repeat: no-repeat;
-          background-position: center;
-       
+          background-position: center;       
         }
 
         @media (min-width: 1024px) {
-  .bg-img {
-    background-image: none;
-    background-color: #1A1A1A;
-  }
-}
-        
-
+          .bg-img {
+            background-image: none;
+            background: #1A1A1A;
+          }
+        }
     </style>
 </head>
 <body class="bg-img">
@@ -63,9 +59,9 @@
 
     <div class="container mx-auto p-2">
         <h1 class="text-3xl text-white font-bold mb-4">Tutorial Videos</h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
             <!-- Video Card -->
-            <div class=" shadow-lg rounded-md overflow-hidden w-64 mx-auto">
+            <div class="shadow-lg rounded-md overflow-hidden w-64 mx-auto">
               <div class="p-2 flex justify-between items-center rounded-t-lg text-white bg-slate-500 bg-opacity-30">
                   <div>
                     <h2 class="text-xl font-semibold ">Video Title</h2>
@@ -82,6 +78,7 @@
                     </video>
                 </div>
             </div>
+            <!-- Second card -->
             <div class=" shadow-lg rounded-md overflow-hidden w-64 mx-auto">
               <div class="p-2 flex justify-between items-center rounded-t-lg text-white bg-slate-500 bg-opacity-30">
                   <div>
@@ -99,6 +96,7 @@
                     </video>
                 </div>
             </div>
+            <!-- Third card -->
             <div class=" shadow-lg rounded-md overflow-hidden w-64 mx-auto">
               <div class="p-2 flex justify-between items-center rounded-t-lg text-white bg-slate-500 bg-opacity-30">
                   <div>
@@ -121,7 +119,7 @@
             
         </div>
     </div>
-
-    <footer class="w-full p-5 bg-red-500">This is footer</footer>
+<p class="text-gray-400 p-3 justify-center text-center">LETSBET is known for its unique interface and is now becoming one of Asia's top and trusted online casinos. It is licensed, regulated and supports responsible gaming.LETSBET offers wide range of first class live casino games like Baccarat, Blackjack, Dragon Tiger, Roulette, SicBo and so much more! You can also choose from almost a thousand of high payout slot games that will surely give you the thrills!</p>
+    <footer class="w-full text-white text-center mt-10 p-5 bg-[#1A1A1A]">Copyright ©2019-2024 LETSBET All rights reserved.</footer>
 </body>
 </html>
